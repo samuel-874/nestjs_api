@@ -9,4 +9,11 @@ import {
 } from "@nestjs/common";
 import { Request } from "express";
 @Controller()
-export class AppController {}
+export class AppController {
+
+  @Get('/test')
+  testConnect(){
+      return "works fine";
+  }
+
+}
